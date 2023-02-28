@@ -10,14 +10,14 @@ int main()
 {
     int qtdPessoas = 0;
     float salario = 1, totalSalario=0;
-    while (salario >= 0)
+    while (1)
     {
         printf("Digite o salário: ");
         scanf("%f", &salario);
-        if(salario>=0){
-            totalSalario += salario;
-            qtdPessoas++;
-        }
+        if(salario<0)
+            break;
+        totalSalario += salario;
+        qtdPessoas++;
     }
     printf("Média salarial: %g R$ por pessoa.\n", totalSalario / qtdPessoas);
 }
