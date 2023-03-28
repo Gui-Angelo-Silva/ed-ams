@@ -10,9 +10,7 @@ int main(){
         vetA[i]=rand()%21;
     }
     for(int i=0; i<N; i++){
-        vetB[i]= vetA[4-i];
-    }
-    for(int i=0; i<N; i++){
-        printf("vetA[%d] =%3d - vetB[%d] =%3d\n",i,vetA[i],i,vetB[i]);
+        vetB[i]= vetA[(N-1)-i];
+        printf("vetA[%d] =%3d - vetB[%d] =%3d\n",N-1-i,vetA[N-1-i],i,vetB[i]);
     }
 }
