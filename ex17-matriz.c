@@ -117,8 +117,7 @@ int somaColunasMatriz(int matriz[][N], int vetor[])
 }
 int mostrarVetor(int vetor[])
 {
-    int i;
-    for (i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         printf("%2d  ", vetor[i]);
     }
@@ -126,7 +125,6 @@ int mostrarVetor(int vetor[])
     return 0;
 }
 int zerarVetor(int vetor[]){
-    int i;
     for(int i=0; i<N; i++)
         vetor[i]=0;
     return 0;
